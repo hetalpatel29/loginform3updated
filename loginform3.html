@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/loginform3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Redressed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="menusection">
+            <h1>Tract.</h1>
+            <button type="button" class="signupbutton" onclick="signup()">sign up</button>
+
+        </div>
+        <h2>Login to Your Account</h2>
+        <p>choose for 130,000 online video courses with new additions published every second month</p>
+        <div class="loginform" id="loginform">
+            <div class="loginbox">
+                <div class="loginsubbox">
+                    <input type="text" placeholder="Teacher/studentID  " class="txtbox">
+                    <input type="text" placeholder="8 digit pin " class="txtbox">
+                    <button type="button" class="loginbutton  border-gradient">Login to your Account                 <i class="fa-solid fa-arrow-right loginbtnsymbolleft"></i>    </button>
+
+                </div>
+            </div>
+
+            <div class="loginbox">
+                <div class="loginsubbox">
+                    <button type="button" class="loginbutton border-gradient" onclick="google()"><i class="fa-brands fa-google loginbtnsymbolright"></i>Sign in with google        </button>
+                    <button type="button" class="loginbutton border-gradient"><i class="fa-brands fa-facebook-f loginbtnsymbolright"></i>sign in with facebook         </button>
+                    <button type="button" class="loginbutton border-gradient"><i class="fa-brands fa-apple loginbtnsymbolright"></i>sign in Account   </button>
+
+                </div>
+            </div>
+            <a class="forgotpass" href="">forgot password?</a>
+
+
+        </div>
+        <div id="signupid">
+            <div class="txtboxdivision">
+                <input type="text" placeholder="Email" class="txtbox" id="txtbox">
+                <br>
+                <input type="text" placeholder="Password" class="txtbox" id="txtbox">
+                <br>
+                <input type="txt" placeholder="Password" class="txtbox" id="txtbox">
+            </div>
+
+
+
+
+
+            <button class="loginbutton border-gradient signinbtn" type="button" onclick="signin()" id="signinbtn" class="signupbutton">SIGN IN</button>
+        </div>
+    </div>
+    <script>
+        let loginform = document.getElementById("loginform").style;
+        let signupid = document.getElementById("signupid").style;
+
+        function signup() {
+            signupid.transition = "1s";
+            loginform.display = "none";
+            signupid.top = "50%";
+            signupid.left = "41%";
+            signupid.width = "250px";
+            signupid.height = "300px";
+
+
+
+
+        }
+
+        function signin() {
+            loginform.display = "block";
+            signupid.top = "14%";
+            signupid.left = "75%";
+            signupid.width = "0px";
+            signupid.height = "0px";
+
+
+
+        }
+    </script>
+</body>
+
+</html>
